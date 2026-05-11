@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tom Edgar | Mathematics</title>
+
+<style>
+body {
+  font-family: Georgia, serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* --- Layout --- */
+.top {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.top img {
+  width: 300px;
+  border-radius: 6px;
+}
+
+/* --- Typography --- */
+h1 { margin-bottom: 5px; }
+h2 {
+  margin-top: 40px;
+  border-bottom: 7px solid #331B3F;
+  padding-bottom: 4px;
+}
+
+a { color: #331B3F; text-decoration: none; }
+a:hover { text-decoration: underline; color: #0b5aa2; }
+
+nav {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+nav a {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* --- Publications --- */
+details {
+  margin: 10px 0;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul { margin-left: 20px; }
+
+small {
+  color: #666;
+}
+
+/* --- Carousel --- */
+.carousel-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+/* Simple, no box styling */
+.video {
+  flex: 0 0 320px;
+}
+
+/* Clean embeds */
+iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  
+  background: rgba(255,255,255,0.9);   /* slightly visible */
+  border: 1px solid #ccc;
+  
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  
+  font-size: 16px;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: white;
+}
+
+.left-btn {
+  left: 5px;    /* ✅ move INSIDE instead of outside */
+}
+
+.right-btn {
+  right: 5px;   /* ✅ move INSIDE instead of outside */
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+
+
+
+.header {
+  background: linear-gradient(to right, #ACC7B4, #ffffff);
+  padding: 20px;
+  border-radius: 6px;
+}
+
+
+/* --- Subtle visual polish --- */
+hr {
+  border: none;
+  border-top: 2px solid #e5e5e5;
+  margin: 40px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== TOP SECTION ===== -->
+<div class="top header">
+
+  <!-- IMAGE: replace file name -->
+  <img src="edgar_polyplane.jpg" alt="Tom Edgar">
+
+  <div>
+    <h1>Tom Edgar</h1>
+    <p>
+    Assistant Professor of Mathematics<br>
+    Colorado State University Pueblo
+    </p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#research">Research</a>
+      <a href="#videos">YouTube</a>
+    </nav>
+  </div>
+
+</div>
+
+<!-- ===== ABOUT ===== -->
+<h2 id="about">About</h2>
+
+<p>
+I am an Assistant Professor of Mathematics at Colorado State University Pueblo.
+My interests include combinatorics, number theory, and the visualization of mathematics.
+</p>
+
+<p>
+I am especially interested in "proofs without words" and in creating clean, visual explanations 
+that highlight the beauty and surprise of mathematics.
+</p>
+
+<p>
+I also run the YouTube channel <strong>Math Visual Proofs</strong>, where I create short
+visual explanations and mathematical animations.
+</p>
+
+<hr>
+
+<!-- ===== TEACHING ===== -->
+<h2 id="teaching">Teaching</h2>
+
+<ul>
+<li><strong>Math 325</strong> – Intermediate Calculus (Fall 2026)</li>
+<li><strong>Math 356</strong> – Statistics for Engineers & Scientists (Fall 2026)</li>
+<li><strong>Math 445</strong> – Discrete Mathematics (Fall 2026)</li>
+</ul>
+
+<p><strong>Office hours:</strong> TBD </p>
+
+<hr>
+
+<!-- ===== RESEARCH ===== -->
+<h2 id="research">Research & Publications</h2>
+
+<p>
+My research includes work in algebra, combinatorics, integer sequences, and visual mathematics. I also spend a lot of time on expository pieces that sometimes include new mathematical ideas.
+</p>
+
+<details>
+<summary>MAA Publications</summary>
+<ul>
+<li>Balanced and Unbalanced: Physical proofs of the mean inequalities</li>
+<li>Euler bricks: visually <small>(2022)</small></li>
+<li>Podcasting Mathematics <small>(2022)</small></li>
+<li>Visual sums of integers in polygonal arrays</li>
+<li>Visual triangular numbers</li>
+<li>Visual polygonal number decompositions</li>
+<li>Gregory's theorem (visual proof)</li>
+<li>Factorial card trick</li>
+<li>Alternating harmonic series rearrangements</li>
+<li>The First 100 Issues</li>
+</ul>
+</details>
+
+<details>
+<summary>Proofs Without Words</summary>
+<ul>
+<li>Two geometric series</li>
+<li>Sum of squares</li>
+<li>Binomial coefficients mod p</li>
+<li>Even and odd powers</li>
+<li>Abel transformation</li>
+<li>Rearranged harmonic series</li>
+<li>Perfect powers</li>
+<li>Factorial sums</li>
+<li>Matchstick triangles</li>
+</ul>
+</details>
+
+<details>
+<summary>Combinatorics & Number Theory</summary>
+<ul>
+<li>Padovan identities</li>
+<li>Factorial base representations</li>
+<li>Zeckendorf representations</li>
+<li>Niven numbers</li>
+<li>m-ary partitions</li>
+<li>Fibonacci approximations</li>
+</ul>
+</details>
+
+<details>
+<summary>Group Theory</summary>
+<ul>
+<li>Dihedral symmetric spaces</li>
+<li>Reflection subgroups</li>
+<li>Hyperbolic Coxeter systems</li>
+<li>PhD dissertation</li>
+</ul>
+</details>
+
+<details>
+<summary>Preprints & Other Work</summary>
+<ul>
+<li>Many proofs of 1 + 2 + ... + n</li>
+<li>Rational base representations</li>
+<li>Automatic normal forms</li>
+</ul>
+</details>
+
+<hr>
+
+<!-- ===== YOUTUBE ===== -->
+<h2 id="videos">Math Visual Proofs</h2>
+
+<p>
+A selection of videos from my channel.
+</p>
+
+<div class="carousel-wrapper">
+
+  <button class="carousel-btn left-btn" onclick="scrollCarousel(-1)">◀</button>
+  <button class="carousel-btn right-btn" onclick="scrollCarousel(1)">▶</button>
+
+  <div class="carousel" id="carousel">
+
+
+
+
+  
+  
+  </div>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cx-qHZwsLqs?si=lt-yrj7DcMBEIcXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
+
+
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById("carousel");
+  const scrollAmount = 340; // video width + gap
+
+  carousel.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
+</script>
+
