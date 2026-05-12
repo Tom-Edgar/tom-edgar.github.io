@@ -330,20 +330,13 @@ selected.forEach(id => {
 });
 </script>
 
+
 <script>
 function scrollCarousel(direction) {
   const carousel = document.getElementById("carousel");
 
-  if (!carousel) {
-    console.log("Carousel not found");
-    return;
-  }
-
   const scrollAmount = 340;
 
-  carousel.scrollBy({
-    left: direction * scrollAmount,
-    behavior: "smooth"
-  });
+  carousel.scrollLeft += direction * scrollAmount;
 }
 </script>
