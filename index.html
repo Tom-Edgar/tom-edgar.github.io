@@ -299,22 +299,33 @@ A selection of videos from my channel.
   
   </div>
 </div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cx-qHZwsLqs?si=lt-yrj7DcMBEIcXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+  
 </body>
 </html>
 
-
 <script>
-function scrollCarousel(direction) {
-  const carousel = document.getElementById("carousel");
-  const scrollAmount = 340; // video width + gap
+const videos = [
+  "dUkCgTOOpQ0",
+  "hB2F9lyr2_k",
+  "JteQEN1XPyc",
+  "ocbI2R13Jxw",
+  "o2mbN452ywA",
+  "iyJ08TivJOg"
+];
 
-  carousel.scrollBy({
-    left: direction * scrollAmount,
-    behavior: "smooth"
-  });
-}
+// Shuffle the array
+videos.sort(() => Math.random() - 0.5);
+
+// Pick first 5 videos
+const selected = videos.slice(0, 5);
+
+const carousel = document.getElementById("carousel");
+
+// Insert into HTML
+selected.forEach(id => {
+  const div = document.createElement("div");
+  div.className = "video";
+  div.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe>`;
+  carousel.appendChild(div);
+});
 </script>
-
